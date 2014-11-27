@@ -89,6 +89,10 @@
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
 	trustctime = false
 
+[user]
+	name = DDovgan
+	email = sinled@gmail.com
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -157,3 +161,21 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[diff]
+	tool = Kaleidoscope
+
+[difftool]
+	prompt = false
+
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+
+[mergetool]
+	prompt = false
+
+[merge]
+	tool = Kaleidoscope
