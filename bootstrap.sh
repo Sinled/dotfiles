@@ -13,7 +13,16 @@ xcode-select --install
 source install/.brew
 
 #install rcm
-source install/.rcm
+# rcm (https://github.com/thoughtbot/rcm#installation) (http://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)
+brew tap thoughtbot/formulae
+brew install rcm
+
+# copy rcfiles
+rcup -v -d rc
+
+# update bash profile
+source ~/.bash_profile
+
 
 #install cask
 source install/.cask
