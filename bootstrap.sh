@@ -58,3 +58,6 @@ brew install rcm
 
 # install cask
 brew install caskroom/cask/brew-cask
+
+# install soft with cask
+brew cask install iterm2
