@@ -32,23 +32,14 @@ alias ohmyzsh="editor ~/.oh-my-zsh"
 alias gitconfig="editor ~/.gitconfig"
 alias gitexclude="editor .git/info/exclude"
 
-alias go-jum="cd ~/dev/media_sapiens/jum/jum"
-alias go-jum-client="cd ~/dev/media_sapiens/jum/jum/jum-client"
-alias go-wimoto="cd ~/dev/media_sapiens/wimoto/wimoto"
-alias go-fevent="cd ~/dev/media_sapiens/fevent-whitelabel/fevent-whitelabel"
-alias go-desktop="cd ~/Desktop"
-alias go-eductaion="cd ~/Dropbox/Education"
-
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
-
 # simple server
 alias server="python -m SimpleHTTPServer 8081"
 alias run-mysql-server="mysql.server start"
-
 
 
 # iterm tab color
@@ -63,51 +54,11 @@ tab-reset() {
     echo -ne "\033]6;1;bg;*;default\a"
 }
 
-# color-ssh() {
-#     if [[ -n "$ITERM_SESSION_ID" ]]; then
-#         trap "tab-reset" INT EXIT
-#         if [[ "$*" =~ "production|ec2-.*compute-1" ]]; then
-#             tab-color 255 0 0
-#         else
-#             tab-color 0 255 0
-#         fi
-#     fi
-#     ssh $*
-# }
-# compdef _ssh color-ssh=ssh
-
-# alias ssh=color-ssh
 
 #git aliases
 
-# alias gs="git status"
 alias glog='git log --graph --pretty=format:"%C(yellow)%h %C(white)- %ar, %C(cyan)[%an] %C(white normal): %s"'
-# alias ga="git add"
-# alias ga-all="git add ."
-# alias gc-="git commit -m"
-# alias gcAll-="git commit -am"
-# alias gpullOriginMaster="git pull origin master"
-# alias gpushOriginMaster="git push origin master"
-# alias gd="git difftool"
-# alias gds="git difftool --staged"
-# alias gunstageFile-="git reset HEAD"
-# alias gundoCommitSoft="git reset --soft HEAD^"
-# alias gundoCommitHard="git reset --hard HEAD^"
 
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
@@ -118,18 +69,13 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git python brew osx sublime npm forklift pip fabric django ruby mysql)
 
-
-
 # Customize to your needs...
-export PATH="/usr/bin:/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/X11/bin:/opt/local/bin:/usr/local/bin/sublime:/usr/local/git/bin:/Users/SD/bin/android-sdk-macosx/tools:/Users/SD/bin/android-sdk-macosx/platform-tools"
-# export NODE_PATH="/usr/local/lib/node"
-export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
-export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+export PATH="/Users/SD/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 source $ZSH/oh-my-zsh.sh
-source /usr/local/bin/virtualenvwrapper.sh
-export WORKON_HOME=$HOME/dev/media_sapiens/.virtualenvs
-export PROJECT_HOME=$HOME/dev/media_sapiens
-export ESPORTS_HOME=$HOME/dev/media_sapiens/wargaming/esports_git
+# source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME=$HOME/dev/Projects/.virtualenvs
+export PROJECT_HOME=$HOME/dev/Projects
+export ESPORTS_HOME=$HOME/dev/Projects/wargaming/esports_git
 export EDITOR=e
 export VAGRANT_DEFAULT_PROVIDER=parallels
 
