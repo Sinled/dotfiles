@@ -26,4 +26,5 @@ brew cask install ynab
 brew cask install smcfancontrol
 brew cask install utorrent
 brew cask install xscope
+brew cask install things
 
