@@ -5,7 +5,7 @@ echo 'Installing ruby'
 echo ''
 
 # install latest ruby
-curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable
+curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --ruby
 
 # update bash profile
 # source ~/.bash_profile
