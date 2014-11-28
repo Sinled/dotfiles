@@ -12,6 +12,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # install brew
 source install/.brew
 
+# install rcm
+source install/.rcm
 
 #install cask
 source install/.cask
