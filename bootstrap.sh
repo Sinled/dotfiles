@@ -15,11 +15,14 @@ source install/.brew
 # install rcm
 source install/.rcm
 
-#install cask
+# install cask
 source install/.cask
 
-#install ruby
+# install ruby
 source install/.ruby
+
+# install npm packages
+source install/.node
 
 # set osx defaults
 source osx/.osx

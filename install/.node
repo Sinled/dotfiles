@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+echo ''
+echo 'Installing node packages'
+echo ''
+
+npm install -g bower
+npm install -g jslint
+npm install -g jshint
+npm install -g gulp
+npm install -g grunt-cli
+npm install -g finch
+npm install -g coffeelint
+npm install -g coffee-script
