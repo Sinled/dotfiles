@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
 
+echo ''
+echo 'Install Brew'
+echo ''
+
 # install brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # update bash profile
 source ~/.bash_profile
+
 
 # check if all oc
 # brew doctor
@@ -25,27 +30,27 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# brew install gnu-sed --with-default-names
+# # Install `wget` with IRI support.
+# brew install wget --with-iri
 
-# Install other useful binaries.
-brew install ack
-#brew install exiv2
-brew install imagemagick --with-webp
-brew install libpng
-brew install macvim
-brew install mc
-brew install openssl
-brew install p7zip
-brew install pigz
-brew install pv
-brew install rename
-brew install tree
-brew install webkit2png
-brew install zopfli
-brew install htop
-brew install zlib
+# # Install other useful binaries.
+# brew install ack
+# #brew install exiv2
+# brew install imagemagick --with-webp
+# brew install libpng
+# brew install macvim
+# brew install mc
+# brew install openssl
+# brew install p7zip
+# brew install pigz
+# brew install pv
+# brew install rename
+# brew install tree
+# brew install webkit2png
+# brew install zopfli
+# brew install htop
+# brew install zlib
 
 # install nginx
 brew install nginx
@@ -54,3 +59,7 @@ brew install node
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# update bash profile
+source ~/.bash_profile
+

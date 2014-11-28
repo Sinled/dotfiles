@@ -1,30 +1,36 @@
 #!/usr/bin/env bash
 
+echo ''
+echo 'Install Cask'
+echo ''
+
 # install cask
 brew install caskroom/cask/brew-cask
 
 # install soft with cask
 brew cask install iterm2
-brew cask install alfred
-brew cask install onepassword
-brew cask install anki
-brew cask install controllermate
-brew cask install dropbox
-brew cask install firefox
-brew cask install google-chrome
-brew cask install opera
-brew cask install yandex
-brew cask install google-drive
-brew cask install imageoptim
-brew cask install kaleidoscope
-brew cask install skype
-brew cask install sourcetree
-brew cask install steam
-brew cask install vagrant
-brew cask install parallels-desktop
-brew cask install ynab
-brew cask install smcfancontrol
-brew cask install utorrent
-brew cask install xscope
-brew cask install things
+# brew cask install alfred
+# brew cask install onepassword
+# brew cask install anki
+# brew cask install controllermate
+# brew cask install dropbox
+# brew cask install firefox
+# brew cask install google-chrome
+# brew cask install opera
+# brew cask install yandex
+# brew cask install google-drive
+# brew cask install imageoptim
+# brew cask install kaleidoscope
+# brew cask install skype
+# brew cask install sourcetree
+# brew cask install steam
+# brew cask install vagrant
+# brew cask install parallels-desktop
+# brew cask install ynab
+# brew cask install smcfancontrol
+# brew cask install utorrent
+# brew cask install xscope
+# brew cask install things
 
+# update bash profile
+source ~/.bash_profile

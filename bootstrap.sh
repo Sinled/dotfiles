@@ -12,17 +12,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # install brew
 source install/.brew
 
-#install rcm
-# rcm (https://github.com/thoughtbot/rcm#installation) (http://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)
-brew tap thoughtbot/formulae
-brew install rcm
-
-# copy rcfiles
-rcup -v -d rc
-
-# update bash profile
-source ~/.bash_profile
-
 
 #install cask
 source install/.cask
