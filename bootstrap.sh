@@ -26,3 +26,7 @@ source install/.node
 
 # set osx defaults
 source osx/.osx
+
+# restart system
+echo 'Restarting...'
+osascript -e 'tell app "loginwindow" to «event aevtrsdn»'
