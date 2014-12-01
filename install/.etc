@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+echo ''
+echo 'Post install'
+echo ''
+
+# install vagrant plugins
+vagrant plugin install vagrant-hostsupdater
+vagrant plugin install vagrant-parallels
+
+
+# link sublime to work in terminal

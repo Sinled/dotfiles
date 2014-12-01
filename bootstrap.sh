@@ -24,6 +24,9 @@ source install/.ruby
 # install npm packages
 source install/.node
 
+# install npm packages
+source install/.etc
+
 # set osx defaults
 source osx/.osx
 
