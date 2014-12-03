@@ -1,0 +1,47 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+
+
+# Customize to your needs...
+ulimit -n 10000
+
+
+
+# Aliases
+alias glog='git log --graph --pretty=format:"%C(yellow)%h %C(white)- %ar, %C(cyan)[%an] %C(white normal): %s"'
+
+
+
+# iterm tab color
+# usage >> tab-color 255 0 0
+tab-color() {
+    echo -ne "\033]6;1;bg;red;brightness;$1\a"
+    echo -ne "\033]6;1;bg;green;brightness;$2\a"
+    echo -ne "\033]6;1;bg;blue;brightness;$3\a"
+}
+
+tab-reset() {
+    echo -ne "\033]6;1;bg;*;default\a"
+}
+
+
+
+export PROJECT_HOME=$HOME/dev/Projects
+export ESPORTS_HOME=$HOME/dev/Projects/esports/esports_git
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+

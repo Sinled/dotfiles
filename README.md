@@ -1,4 +1,4 @@
-# Sinled dotfiles
+# Sinled  dotfiles
 
 Based on [mathiasbynens dotfiles](https://github.com/mathiasbynens/dotfiles)!
 
