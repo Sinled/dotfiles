@@ -31,6 +31,8 @@ brew cask install smcfancontrol
 brew cask install utorrent
 brew cask install xscope
 brew cask install things
+brew cask install razer-synapse
+
 
 # update bash profile
 source ~/.bash_profile
