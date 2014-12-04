@@ -8,5 +8,10 @@ echo ''
 vagrant plugin install vagrant-hostsupdater
 vagrant plugin install vagrant-parallels
 
+# install prezto
+zsh
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+chsh -s /bin/zsh
+
 
 # link sublime to work in terminal
