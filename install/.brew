@@ -56,7 +56,8 @@ brew install zlib
 brew install nginx
 # install node
 brew install node
-
+# install python
+brew install python --framework
 # Remove outdated versions from the cellar.
 brew cleanup
 
