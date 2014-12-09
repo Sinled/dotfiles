@@ -8,6 +8,25 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# ==============================================================================
+# OSX customizations
+#
+# These are only that I currently use, but here are some more:
+#     * http://mths.be/osx (main source of modifications)
+#     * http://secrets.blacktree.com/
+#     * http://www.defaults-write.com/
+#     * https://twitter.com/defaultswrite
+#     * https://github.com/ptb/Mac-OS-X-Lion-Setup/blob/master/setup.sh
+#     * https://github.com/isao/shell/blob/master/osx-defaults.sh
+#     * https://github.com/ymendel/dotfiles/tree/master/osx
+#     * https://github.com/karmi/dotfiles/tree/master/mac
+#     * https://github.com/josh-/dotfiles/blob/master/osx
+#     * https://gist.github.com/johan/6108880
+#
+# Most of the functionalities can be modified through similar commands like
+# these, they will work for system and third-party apps.
+# ==============================================================================
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
@@ -125,6 +144,23 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 #rm -rf ~/Library/Application Support/Dock/desktoppicture.db
 #sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
 #sudo ln -s /path/to/your/image /System/Library/CoreServices/DefaultDesktop.jpg
+#
+#
+
+# Set Croatian date format, but with English names
+defaults write NSGlobalDomain AppleICUDateFormatStrings -dict-add "1" "dd.MM.yy."
+defaults write NSGlobalDomain AppleICUDateFormatStrings -dict-add "2" "dd.MM.y."
+defaults write NSGlobalDomain AppleICUDateFormatStrings -dict-add "3" "dd.MM.y."
+defaults write NSGlobalDomain AppleICUDateFormatStrings -dict-add "4" "EEEE, d. MMMM y."
+
+# Set Croatian time format
+defaults write NSGlobalDomain AppleICUTimeFormatStrings -dict-add "1" "HH:mm"
+defaults write NSGlobalDomain AppleICUTimeFormatStrings -dict-add "2" "HH:mm:ss"
+defaults write NSGlobalDomain AppleICUTimeFormatStrings -dict-add "3" "HH:mm:ss z"
+defaults write NSGlobalDomain AppleICUTimeFormatStrings -dict-add "4" "HH' h 'mm' min 'ss' s 'zzzz"
+
+# Disable day of the week in menu bar clock
+defaults write com.apple.menuextra.clock DateFormat -string 'HH:mm'
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
