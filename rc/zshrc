@@ -46,6 +46,11 @@ function server() {
 
 export PROJECT_HOME=$HOME/dev/Projects
 export ESPORTS_HOME=$HOME/dev/Projects/esports/esports_git
+
+#virtualenv wrapper
+export WORKON_HOME=$HOME/dev/Projects/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export LC_ALL=en_US.UTF-8
