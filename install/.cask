@@ -28,7 +28,7 @@ brew cask install vagrant
 brew cask install parallels-desktop
 brew cask install ynab
 brew cask install smcfancontrol
-brew cask install utorrent
+brew cask install transmission
 brew cask install xscope
 brew cask install things
 brew cask install razer-synapse
