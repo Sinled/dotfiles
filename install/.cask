@@ -34,5 +34,11 @@ brew cask install things
 brew cask install razer-synapse
 brew cask install radiant-player
 
+# install cask versions
+brew tap caskroom/versions
+
+brew cask install sublime-text3
+
+
 # update bash profile
 source ~/.bash_profile
