@@ -34,5 +34,8 @@ brew cask install things
 brew cask install razer-synapse
 brew cask install radiant-player
 
+# install versions
+brew tap caskroom/versions
+
 # update bash profile
 source ~/.bash_profile
