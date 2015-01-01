@@ -22,20 +22,23 @@ brew cask install google-drive
 brew cask install imageoptim
 brew cask install kaleidoscope
 brew cask install skype
-brew cask install sourcetree
+# brew cask install sourcetree
 brew cask install steam
 brew cask install vagrant
 brew cask install parallels-desktop
 brew cask install ynab
 brew cask install smcfancontrol
-brew cask install utorrent
+brew cask install transmission
 brew cask install xscope
 brew cask install things
 brew cask install razer-synapse
 brew cask install radiant-player
 
-# install versions
+# install cask versions
 brew tap caskroom/versions
+
+brew cask install sublime-text3
+
 
 # update bash profile
 source ~/.bash_profile
