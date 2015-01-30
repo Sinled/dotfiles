@@ -90,8 +90,8 @@
 	trustctime = false
 
 [user]
-	name = 
-	email = 
+	name =
+	email =
 
 [color]
 
@@ -143,13 +143,11 @@
 # URL shorthands
 
 [url "git@github.com:"]
-
 	insteadOf = "gh:"
 	pushInsteadOf = "github:"
 	pushInsteadOf = "git://github.com/"
 
 [url "git://github.com/"]
-
 	insteadOf = "github:"
 
 [url "git@gist.github.com:"]
@@ -159,8 +157,8 @@
 	pushInsteadOf = "git://gist.github.com/"
 
 [url "git://gist.github.com/"]
-
 	insteadOf = "gist:"
+
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
@@ -179,9 +177,17 @@
 
 [merge]
 	tool = Kaleidoscope
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
+
 [mergetool "sourcetree"]
 	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
+[difftool "p4mergetool"]
+	cmd = " /opt/homebrew-cask/Caskroom/p4merge/2014.2/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE"
+
+[difftool "pycharm"]
+	cmd = "/opt/homebrew-cask/Caskroom/pycharm/4.0.4/PyCharm.app/Contents/MacOS/pycharm diff $LOCAL $REMOTE"
