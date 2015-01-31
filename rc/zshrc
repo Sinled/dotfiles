@@ -19,6 +19,7 @@ ulimit -n 10000
 
 # Aliases
 alias glog='git log --graph --pretty=format:"%C(yellow)%h %C(white)- %ar, %C(cyan)[%an] %C(white normal): %s"'
+alias gdiff='git difftool /Users/SD/dev/Projects/esports/esports_git/jsapps /Users/SD/dev/Projects/esports/esports_git/src/templates2'
 
 
 
