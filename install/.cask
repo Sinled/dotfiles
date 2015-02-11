@@ -20,9 +20,8 @@ brew cask install opera
 brew cask install yandex
 brew cask install google-drive
 brew cask install imageoptim
-brew cask install kaleidoscope
+brew cask install ksdiff
 brew cask install skype
-# brew cask install sourcetree
 brew cask install steam
 brew cask install vagrant
 brew cask install parallels-desktop
@@ -33,6 +32,7 @@ brew cask install xscope
 brew cask install things
 brew cask install razer-synapse
 brew cask install radiant-player
+brew cask install skim
 
 # install cask versions
 brew tap caskroom/versions
