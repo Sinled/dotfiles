@@ -18,7 +18,7 @@ brew cask install google-drive
 brew cask install imageoptim
 brew cask install iterm2
 brew cask install ksdiff
-brew cask install onepassword
+brew cask install 1password
 brew cask install opera
 brew cask install parallels-desktop
 brew cask install pycharm
