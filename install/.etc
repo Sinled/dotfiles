@@ -12,9 +12,11 @@ vagrant plugin install vagrant-parallels
 pip install virtualenvwrapper
 
 # install prezto
-zsh
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-chsh -s /bin/zsh
+# zsh
+# git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+# chsh -s /bin/zsh
 
+#install oh-my-zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # link sublime to work in terminal
