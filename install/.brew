@@ -52,6 +52,9 @@ brew install zopfli
 brew install htop
 brew install zlib
 
+# install novim
+brew tap neovim/homebrew-neovim
+brew install --HEAD neovim
 # install nginx
 brew install nginx
 # install node
