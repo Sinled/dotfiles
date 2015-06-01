@@ -22,6 +22,8 @@ alias glog='git log --graph --pretty=format:"%C(yellow)%h %C(white)- %ar, %C(cya
 alias gdiff='git difftool /Users/SD/dev/Projects/esports/esports_git/jsapps /Users/SD/dev/Projects/esports/esports_git/src/templates2'
 alias greset='git reset head --hard'
 
+alias mserver='mongod --config /usr/local/etc/mongod.conf'
+
 
 
 # iterm tab color
