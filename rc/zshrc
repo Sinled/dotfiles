@@ -48,6 +48,14 @@ function server() {
 }
 
 
+# commit with current branch prepended
+function gcam() {
+		BRANCH=$(git branch -l | grep '*' | awk '{print $2}')
+		git commit -am "${BRANCH}. ${1}"
+}
+
+
+
 export PROJECT_HOME=$HOME/dev/Projects
 export ESPORTS_HOME=$HOME/dev/Projects/esports/esports_git
 
