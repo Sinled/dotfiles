@@ -58,6 +58,8 @@ function gcam() {
 
 export PROJECT_HOME=$HOME/dev/Projects
 export ESPORTS_HOME=$HOME/dev/Projects/esports/esports_git
+export TMS_HOME=$HOME/dev/Projects/TMS/TMSAdmin
+
 
 #virtualenv wrapper
 export WORKON_HOME=$HOME/dev/Projects/.virtualenvs
