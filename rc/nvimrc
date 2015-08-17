@@ -1,10 +1,15 @@
+call plug#begin('~/.nvim/plugged')
+
 Plug 'junegunn/seoul256.vim'
-	" Unified color scheme (default: dark)
-	colo seoul256
 
-	" Light color scheme
-	colo seoul256-light
+call plug#end()
 
-	" Switch
-	set background=dark
-	set background=light
+
+" Unified color scheme (default: dark)
+colo seoul256
+
+" Light color scheme
+colo seoul256-light
+
+" Switch
+set background=dark
