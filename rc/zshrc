@@ -50,10 +50,17 @@ function server() {
 }
 
 
-# commit with current branch prepended
+# commit all with current branch prepended
 function gcam() {
 		BRANCH=$(git branch -l | grep '*' | awk '{print $2}')
 		git commit -am "${BRANCH}. ${1}"
+}
+
+
+# commit only files add stage with current branch prepended
+function gcm() {
+		BRANCH=$(git branch -l | grep '*' | awk '{print $2}')
+		git commit -m "${BRANCH}. ${1}"
 }
 
 
