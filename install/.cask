@@ -10,6 +10,7 @@ brew install caskroom/cask/brew-cask
 # install soft with cask
 brew cask install alfred
 brew cask install anki
+brew cask install atom
 brew cask install controllermate
 brew cask install dropbox
 brew cask install firefox
@@ -43,6 +44,9 @@ brew tap caskroom/versions
 brew cask install sublime-text3
 brew cask install google-chrome-canary
 brew cask install caskroom/homebrew-versions/java6
+
+brew cask install spotify
+brew cask install tunnelbear
 
 
 # update bash profile

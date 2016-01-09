@@ -21,6 +21,8 @@ ulimit -n 10000
 alias glog='git log --graph --pretty=format:"%C(yellow)%h %C(white)- %ar, %C(cyan)[%an] %C(white normal): %s"'
 alias gdiff='git difftool /Users/SD/dev/Projects/esports/esports_git/jsapps /Users/SD/dev/Projects/esports/esports_git/src/templates2'
 alias greset='git reset head --hard'
+# remove all branches except master
+alias gbremove="git branch | grep -v "master" | xargs git branch -D"
 
 alias mserver='mongod --config /usr/local/etc/mongod.conf'
 
@@ -48,10 +50,17 @@ function server() {
 }
 
 
-# commit with current branch prepended
+# commit all with current branch prepended
 function gcam() {
 		BRANCH=$(git branch -l | grep '*' | awk '{print $2}')
 		git commit -am "${BRANCH}. ${1}"
+}
+
+
+# commit only files add stage with current branch prepended
+function gcm() {
+		BRANCH=$(git branch -l | grep '*' | awk '{print $2}')
+		git commit -m "${BRANCH}. ${1}"
 }
 
 
