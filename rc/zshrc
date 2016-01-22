@@ -63,7 +63,7 @@ function gcm() {
 		git commit -m "${BRANCH}. ${1}"
 }
 alias gd='git difftool .'
-alias gdc='git difftool . --cached'
+alias gdc='git difftool --cached .'
 
 
 
