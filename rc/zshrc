@@ -62,6 +62,9 @@ function gcm() {
 		BRANCH=$(git branch -l | grep '*' | awk '{print $2}')
 		git commit -m "${BRANCH}. ${1}"
 }
+alias gd='git difftool .'
+alias gdc='git difftool . --cached'
+
 
 
 
