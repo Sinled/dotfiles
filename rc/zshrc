@@ -67,7 +67,9 @@ function gcm() {
 # force update cask
 function bcaskupdate() {
 	brew update
+	brew cleanup
 	brew cask update
+	brew cask cleanup
 	brew cask uninstall --force $1
 	brew cask install $1
 }
