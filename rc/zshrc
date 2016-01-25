@@ -62,6 +62,17 @@ function gcm() {
 		BRANCH=$(git branch -l | grep '*' | awk '{print $2}')
 		git commit -m "${BRANCH}. ${1}"
 }
+
+
+# force update cask
+function bcaskupdate() {
+	brew update
+	brew cask update
+	brew cask uninstall --force $1
+	brew cask install $1
+}
+
+
 alias gd='git difftool .'
 alias gdc='git difftool --cached .'
 
