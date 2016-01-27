@@ -74,6 +74,21 @@ function bcaskupdate() {
 	brew cask install $1
 }
 
+function fixbrew() {
+	# untap all cask repositories
+	brew untap caskroom/homebrew-cask
+	brew untap phinze/homebrew-cask
+	# remove all remaining pieces
+	rm -rf $(brew --prefix)/Library/Taps/phinze-cask
+	rm $(brew --prefix)/Library/Formula/brew-cask.rb
+	rm -rf $(brew --prefix)/Library/Taps/caskroom
+	# finish up
+	brew uninstall --force brew-cask
+	brew update; brew cleanup; brew cask cleanup
+}
+
+
+
 
 alias gd='git difftool .'
 alias gdc='git difftool --cached .'
