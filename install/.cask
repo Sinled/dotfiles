@@ -7,6 +7,9 @@ echo ''
 # install cask
 brew install caskroom/cask/brew-cask
 
+# add possibility to install specific versions
+brew tap caskroom/versions
+
 # install soft with cask
 brew cask install alfred
 brew cask install anki
@@ -21,7 +24,7 @@ brew cask install iterm2
 brew cask install ksdiff
 brew cask install 1password
 brew cask install opera
-brew cask install parallels-desktop
+brew cask install parallels10
 brew cask install pycharm
 brew cask install radiant-player
 # brew cask install razer-synapse
