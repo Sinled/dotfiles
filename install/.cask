@@ -25,7 +25,7 @@ brew cask install ksdiff
 brew cask install 1password
 brew cask install opera
 brew cask install parallels10
-brew cask install pycharm
+brew cask install webstorm
 brew cask install radiant-player
 # brew cask install razer-synapse
 brew cask install skim
@@ -39,7 +39,8 @@ brew cask install vagrant
 brew cask install xscope
 brew cask install yandex
 brew cask install ynab
-brew cask install mplayer-osx-extended
+# mplayer has malware currently inside
+# brew cask install mplayer-osx-extended
 
 # install cask versions
 brew tap caskroom/versions
