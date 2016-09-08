@@ -4,6 +4,7 @@ echo ''
 echo 'Installing node packages'
 echo ''
 
+npm install -g n
 npm install -g bower
 npm install -g jslint
 npm install -g jshint
