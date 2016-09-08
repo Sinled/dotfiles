@@ -59,6 +59,7 @@ brew install --HEAD neovim
 # install nginx
 brew install nginx
 # install node
+brew install nvm
 brew install node
 # install python
 brew install python --framework
