@@ -41,6 +41,7 @@ brew cask install yandex
 brew cask install ynab
 # mplayer has malware currently inside
 # brew cask install mplayer-osx-extended
+brew cask install qlmarkdown
 
 # install cask versions
 brew tap caskroom/versions
