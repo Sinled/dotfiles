@@ -24,7 +24,7 @@ brew cask install iterm2
 brew cask install ksdiff
 brew cask install 1password
 brew cask install opera
-brew cask install parallels10
+brew cask install parallels-desktop10
 brew cask install webstorm
 brew cask install radiant-player
 # brew cask install razer-synapse
