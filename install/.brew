@@ -39,7 +39,6 @@ brew install ack
 #brew install exiv2
 brew install imagemagick --with-webp
 brew install libpng
-brew install macvim
 brew install mc
 brew install openssl
 brew install p7zip
@@ -58,10 +57,10 @@ brew install mpv
 brew tap neovim/homebrew-neovim
 brew install --HEAD neovim
 # install nginx
-brew install nginx
+# brew install nginx
 # install node
 brew install nvm
-brew install node
+# brew install node
 # install python
 brew install python --framework
 # Remove outdated versions from the cellar.
