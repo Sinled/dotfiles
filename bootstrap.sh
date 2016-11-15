@@ -19,7 +19,7 @@ source install/.rcm
 source install/.cask
 
 # install ruby
-source install/.ruby
+# source install/.ruby # Probably i dont need ruby for sass and compass only
 
 # install npm packages
 source install/.node
