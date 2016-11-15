@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+
+echo ''
+echo 'Installing node'
+echo ''
+
+nvm install node
+# update bash profile
+source ~/.bash_profile
+
 echo ''
 echo 'Installing node packages'
 echo ''
