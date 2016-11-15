@@ -46,7 +46,7 @@ brew cask install qlmarkdown
 # install cask versions
 brew tap caskroom/versions
 
-brew cask install sublime-text3
+brew cask install sublime-text
 brew cask install google-chrome-canary
 brew cask install caskroom/homebrew-versions/java6
 
