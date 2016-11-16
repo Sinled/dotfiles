@@ -39,6 +39,8 @@ brew cask install vagrant
 brew cask install xscope
 brew cask install yandex
 brew cask install ynab
+brew cask install telegram
+brew cask install evernote
 # mplayer has malware currently inside
 # brew cask install mplayer-osx-extended
 brew cask install qlmarkdown
