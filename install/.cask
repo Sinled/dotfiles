@@ -11,7 +11,7 @@ brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 # install soft with cask
-brew cask install alfred
+brew cask install alfred2
 brew cask install anki
 brew cask install atom
 brew cask install controllermate
