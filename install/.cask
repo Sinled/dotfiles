@@ -11,7 +11,7 @@ brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 # install soft with cask
-brew cask install alfred2
+
 brew cask install anki
 brew cask install atom
 brew cask install controllermate
@@ -24,7 +24,6 @@ brew cask install iterm2
 brew cask install ksdiff
 brew cask install 1password
 brew cask install opera
-brew cask install parallels-desktop10
 brew cask install webstorm
 brew cask install radiant-player
 # brew cask install razer-synapse
@@ -41,19 +40,21 @@ brew cask install yandex
 brew cask install ynab
 brew cask install telegram
 brew cask install evernote
-# mplayer has malware currently inside
-# brew cask install mplayer-osx-extended
+brew cask install spotify
+brew cask install tunnelbear
+# brew cask install mplayer-osx-extended # mplayer has malware currently inside
 brew cask install qlmarkdown
 
 # install cask versions
 brew tap caskroom/versions
 
+brew cask install alfred2
+brew cask install dash2
+brew cask install parallels-desktop10
 brew cask install sublime-text
 brew cask install google-chrome-canary
 brew cask install caskroom/homebrew-versions/java6
 
-brew cask install spotify
-brew cask install tunnelbear
 
 
 # update bash profile
