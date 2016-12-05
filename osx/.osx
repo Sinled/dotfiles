@@ -238,8 +238,16 @@ sudo systemsetup -settimezone "Europe/Zaporozhye" > /dev/null
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+
+###############################################################################
+# Itunes                                                                      #
+###############################################################################
+
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+
+# Prevent automatic device backup
+defaults write com.apple.iTunes DeviceBackupsDisabled -bool true
 
 ###############################################################################
 # Screen                                                                      #
