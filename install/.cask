@@ -13,20 +13,17 @@ brew tap caskroom/versions
 # install soft with cask
 
 brew cask install anki
-brew cask install atom
 brew cask install controllermate
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
-brew cask install google-chrome-canary
 brew cask install google-drive
 brew cask install imageoptim
 brew cask install iterm2
-brew cask install ksdiff
 brew cask install 1password
 brew cask install opera
 brew cask install webstorm
-brew cask install radiant-player
+brew cask install plex-media-server
 # brew cask install razer-synapse
 brew cask install skim
 brew cask install skype
@@ -35,13 +32,12 @@ brew cask install steam
 brew cask install things
 brew cask install thunderbird
 brew cask install transmission
-brew cask install vagrant
 brew cask install xscope
 brew cask install yandex
 brew cask install ynab
 brew cask install telegram
 brew cask install evernote
-brew cask install spotify
+# brew cask install spotify
 brew cask install tunnelbear
 # brew cask install mplayer-osx-extended # mplayer has malware currently inside
 brew cask install qlmarkdown
