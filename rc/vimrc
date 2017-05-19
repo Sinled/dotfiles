@@ -1,11 +1,18 @@
+" Sinled vim file
+" source https://github.com/Sinled/dotfiles/blob/master/rc/vimrc
+
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+
+" --------------- Plugins ------------------------------------------ 
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
+
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -16,6 +23,10 @@ Plugin 'junegunn/seoul256.vim'
 call vundle#end()            " required
 
 
+
+
+" --------------- Color Scheme ------------------------------------- 
+
 " Color Scheme
 " Unified color scheme (default: dark)
 colo seoul256
@@ -25,3 +36,29 @@ colo seoul256-light
 
 " Switch
 set background=dark
+
+
+
+" --------------- Syntax ------------------------------------------- 
+
+syntax enable                 " Enable syntax highlighting.
+
+
+
+" --------------- Indent ------------------------------------------- 
+
+set shiftwidth=4              " Number of spaces to use for each step of (auto)indent.
+set tabstop=4
+set smarttab                  " When on, a <Tab> in front of a line inserts blanks according to 'shiftwidth'.  'tabstop' or 'softtabstop' is used in other places
+set expandtab                 " In Insert mode: Use the appropriate number of spaces to insert a Tab
+set autoindent                " Copy indent from current line when starting a new line
+set smartindent               " Do smart autoindenting when starting a new line.  Works for C-like programs
+set list                      " show invisibles
+set lcs=tab:▸\ ,eol:¬         " Use the same symbols as TextMate for tabstops and EOLs
+
+
+
+" --------------- Encoding ----------------------------------------- 
+
+set encoding=utf-8 nobomb
+set fileencoding=utf-8        " Use UTF-8 without BOM
