@@ -27,6 +27,11 @@ Plugin 'vim-airline/vim-airline-themes'
     let g:airline#extensions#tabline#show_buffers = 0 " Don't display buffers in tab-bar with single tab
     let g:airline#extensions#tabline#fnamemod = ':t'  " Display only filename in tab
     let g:airline_section_y = ''                      " Don't display encoding
+    let g:airline#extensions#tabline#tab_min_count = 2 " configure the minimum number of tabs needed to show the tabline.
+
+
+" Syntax Highlighting
+Plugin 'plasticboy/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -71,3 +76,18 @@ set lcs=tab:▸\ ,eol:¬         " Use the same symbols as TextMate for tabstops
 
 set encoding=utf-8 nobomb
 set fileencoding=utf-8        " Use UTF-8 without BOM
+
+
+" --------------- Interface ----------------------------------------
+
+" Highlight current line in active window or buffer
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END
+
+
+
+
+
