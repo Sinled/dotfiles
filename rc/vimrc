@@ -80,6 +80,10 @@ set fileencoding=utf-8        " Use UTF-8 without BOM
 
 " --------------- Interface ----------------------------------------
 
+set guifont=ConsolasLiga:h17  " Set default font and font size
+set linespace=3               " Increase line spacing
+
+
 " Highlight current line in active window or buffer
 augroup CursorLine
   au!

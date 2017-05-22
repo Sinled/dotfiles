@@ -46,7 +46,7 @@ brew cask install qlmarkdown
 brew tap caskroom/versions
 
 brew cask install alfred2
-brew cask install dash2
+brew cask install dash
 brew cask install parallels-desktop10
 brew cask install sublime-text
 brew cask install google-chrome-canary
