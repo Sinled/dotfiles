@@ -92,6 +92,13 @@ augroup CursorLine
 augroup END
 
 
+" --------------- Interface ----------------------------------------
+
+set ignorecase
+set smartcase
 
 
+" --------------- Search -------------------------------------------
+
+set incsearch  "While typing a search command, show where the pattern, as it was typed so far, matches
 

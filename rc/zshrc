@@ -96,7 +96,7 @@ function fixbrew() {
 alias gd='git difftool .'
 alias gdc='git difftool --cached .'
 
-alias save-ssh-key='ssh-add -K ~/.ssh/d_dovgan_wargaming'
+alias add-ssh-key='ssh-add -K ~/.ssh/d_dovgan_wargaming'
 alias open-chrome='open -a Google\ Chrome --args --ignore-certificate-errors'
 
 
