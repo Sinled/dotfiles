@@ -100,5 +100,9 @@ set smartcase
 
 " --------------- Search -------------------------------------------
 
-set incsearch  "While typing a search command, show where the pattern, as it was typed so far, matches
+set incsearch  " While typing a search command, show where the pattern, as it was typed so far, matches
+set hlsearch   " highlight all search matches
+set wrapscan   " Searches wrap around the end of the file.  Also applies to |]s| and |[s|, searching for spelling mistakes
 
+" Press return to temporarily get out of the highlighted search.
+nnoremap <CR> :nohlsearch<CR><CR> 
