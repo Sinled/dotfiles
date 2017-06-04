@@ -36,7 +36,18 @@ Plugin 'plasticboy/vim-markdown'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
+" Setup netrw as NERDTree
 
+let g:netrw_banner = 0        " Disable netrw banner
+let g:netrw_liststyle = 3     " Render directories as a tree
+let g:netrw_browse_split = 4  " Open selected files in previous window
+let g:netrw_altv = 1          " 
+let g:netrw_winsize = 20      " Set initial split size
+" Open netrw panel on startup
+" augroup ProjectDrawer
+"   autocmd!
+"   autocmd VimEnter * :Vexplore
+" augroup END
 
 
 " --------------- Color Scheme ------------------------------------- 
@@ -82,7 +93,8 @@ set fileencoding=utf-8        " Use UTF-8 without BOM
 
 set guifont=ConsolasLiga:h17  " Set default font and font size
 set linespace=3               " Increase line spacing
-
+set wildmenu                  " Visual autocomplete for command menu
+set showmatch                 " Highlight matching [{()}]
 
 " Highlight current line in active window or buffer
 augroup CursorLine
@@ -106,3 +118,20 @@ set wrapscan   " Searches wrap around the end of the file.  Also applies to |]s|
 
 " Press return to temporarily get out of the highlighted search.
 nnoremap <CR> :nohlsearch<CR><CR> 
+
+
+
+
+" --------------- Folding------------------------------------------
+
+set foldenable          " enable folding
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+set foldmethod=indent   " fold based on indent level
+
+
+" space open/closes folds
+nnoremap <space> za
+
+
+
