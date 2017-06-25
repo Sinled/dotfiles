@@ -27,8 +27,8 @@ map \t :action Refactorings.QuickListPopupAction<CR>
 map \r :action ReformatCode<CR>
 
 " Jump to previous edit location
-map <C-O> :action JumpToLastChange<CR>
-map <C-I> :action JumpToNextChange<CR>
+map <C-O> :action VimMotionJumpPrevious<CR>
+map <C-I> :action VimMotionJumpNext<CR>
 
 " Use < > for continious shift
 vnoremap > >gv
