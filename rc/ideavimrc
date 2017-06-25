@@ -14,8 +14,23 @@ set scrolloff=8       " minimum nr. of lines above and below cursor
 set showmode          " message on status line to show current mode
 set wrapscan          " searches wrap around the end of the file
 
-set vim-surround      " enable vim-surround plugin
+set surround          " enable vim-surround plugin
 
 
 " Press return to temporarily get out of the highlighted search.
 nnoremap <CR> :nohlsearch<CR><CR>
+
+" Show refactor menu
+map \t :action Refactorings.QuickListPopupAction<CR>
+
+" Reformat code
+map \r :action ReformatCode<CR>
+
+" Jump to previous edit location
+map <C-O> :action JumpToLastChange<CR>
+map <C-I> :action JumpToNextChange<CR>
+
+" Use < > for continious shift
+vnoremap > >gv
+vnoremap < <gv
+
