@@ -25,12 +25,12 @@ brew cask install opera
 brew cask install webstorm
 brew cask install plex-media-server
 # brew cask install razer-synapse
-brew cask install skim
+# brew cask install skim
 brew cask install skype
-brew cask install smcfancontrol
+# brew cask install smcfancontrol
 brew cask install steam
 brew cask install things
-brew cask install thunderbird
+# brew cask install thunderbird
 brew cask install transmission
 brew cask install xscope
 brew cask install yandex
@@ -47,7 +47,7 @@ brew tap caskroom/versions
 
 brew cask install alfred2
 brew cask install dash
-brew cask install parallels-desktop10
+brew cask install parallels-desktop
 brew cask install sublime-text
 brew cask install google-chrome-canary
 brew cask install caskroom/homebrew-versions/java6

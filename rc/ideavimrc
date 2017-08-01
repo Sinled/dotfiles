@@ -15,6 +15,7 @@ set showmode          " message on status line to show current mode
 set wrapscan          " searches wrap around the end of the file
 
 set surround          " enable vim-surround plugin
+set clipboard+=unnamed " use os x clipboard
 
 
 " Press return to temporarily get out of the highlighted search.
@@ -26,7 +27,12 @@ map \t :action Refactorings.QuickListPopupAction<CR>
 " Reformat code
 map \r :action ReformatCode<CR>
 
-" Jump to previous edit location
+" Nvigated between previous edit location
+nnoremap g; :action JumpToLastChange<CR>
+nnoremap g, :action JumpToNextChange<CR>
+
+
+" Navigate between cursor position list
 map <C-O> :action VimMotionJumpPrevious<CR>
 map <C-I> :action VimMotionJumpNext<CR>
 
@@ -34,3 +40,14 @@ map <C-I> :action VimMotionJumpNext<CR>
 vnoremap > >gv
 vnoremap < <gv
 
+" Use alt+j alt+\k to move lines up and down
+" currently there are some problems in idea vim
+" nnoremap <A-j> :m .+1<CR>==
+" nnoremap <A-k> :m .-2<CR>==
+" inoremap <A-j> <Esc>:m .+1<CR>==gi
+" inoremap <A-k> <Esc>:m .-2<CR>==gi
+" map <A-J> :action MoveLineDown<CR>
+" map <A-K> :action MoveLineUp<CR>
+
+" Sort lines
+map \s :sort<CR>
