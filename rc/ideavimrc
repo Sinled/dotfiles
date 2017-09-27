@@ -13,7 +13,7 @@ set scrolloff=8       " minimum nr. of lines above and below cursor
 
 set showmode          " message on status line to show current mode
 set wrapscan          " searches wrap around the end of the file
-
+set gdefault          " substitute flag 'g' is default on
 set surround          " enable vim-surround plugin
 set clipboard+=unnamed " use os x clipboard
 

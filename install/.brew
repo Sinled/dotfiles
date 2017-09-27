@@ -53,6 +53,7 @@ brew install zlib
 brew install ffmpeg
 brew install libav
 brew install mpv
+brew install duti
 
 
 brew tap neovim/homebrew-neovim
