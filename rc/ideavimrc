@@ -45,8 +45,8 @@ vnoremap < <gv
 " map <A-K> :action MoveLineUp<CR>
 
 " Use shift enter and enter to insert new line before and after current line
-nmap <S-Enter> O<Esc>j
-nmap <CR> o<Esc>k
+nmap <S-M-Enter> O<Esc>j
+nmap <S-Enter> o<Esc>k
 
 " Set leader
 " let mapleader = "<Space>"
