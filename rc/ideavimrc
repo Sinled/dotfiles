@@ -21,11 +21,6 @@ set clipboard+=unnamed " use os x clipboard
 " Press return to temporarily get out of the highlighted search.
 nnoremap <CR> :nohlsearch<CR><CR>
 
-" Show refactor menu
-map \t :action Refactorings.QuickListPopupAction<CR>
-
-" Reformat code
-map \r :action ReformatCode<CR>
 
 " Nvigated between previous edit location
 nnoremap g; :action JumpToLastChange<CR>
@@ -49,5 +44,24 @@ vnoremap < <gv
 " map <A-J> :action MoveLineDown<CR>
 " map <A-K> :action MoveLineUp<CR>
 
+" Use shift enter and enter to insert new line before and after current line
+nmap <S-Enter> O<Esc>j
+nmap <CR> o<Esc>k
+
+" Set leader
+" let mapleader = "<Space>"
+
+" Show action refactor menu
+map <Space>a :action Refactorings.QuickListPopupAction<CR>
+
+" Reformat code
+map <Space>f :action ReformatCode<CR>
+
+" Go to related symbol
+map <Space>r :action GotoRelated<CR>
+
 " Sort lines
-map \s :sort<CR>
+map <Space>s :sort<CR>
+
+" Go to source\test
+map <Space>t :action GotoTest<CR>
