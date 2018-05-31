@@ -24,6 +24,7 @@ brew cask install 1password
 brew cask install opera
 brew cask install webstorm
 brew cask install plex-media-server
+brew cask install plex-media-player
 # brew cask install razer-synapse
 # brew cask install skim
 brew cask install skype
