@@ -8,7 +8,7 @@ set incsearch         " show where search pattern typed so far matches
 set smartcase         " no ignore case when pattern has uppercase
 
 set matchpairs        " pairs of characters that "%" can match
-set relativenumber    " show the line number relative to the line with the cursor
+" set relativenumber    " show the line number relative to the line with the cursor - Disabled, currently makes pycharm unresponsive in big files
 set scrolloff=8       " minimum nr. of lines above and below cursor
 
 set showmode          " message on status line to show current mode
@@ -59,9 +59,6 @@ map <Space>f :action ReformatCode<CR>
 
 " Go to related symbol
 map <Space>r :action GotoRelated<CR>
-
-" Sort lines
-map <Space>s :sort<CR>
 
 " Go to source\test
 map <Space>t :action GotoTest<CR>
