@@ -96,7 +96,7 @@ function fixbrew() {
 alias gd='git difftool .'
 alias gdc='git difftool --cached .'
 
-alias add-ssh-key='ssh-add -K ~/.ssh/d_dovgan_wargaming'
+alias add-ssh-key='ssh-add -K ~/.ssh/d_dovgan@wargaming.net'
 alias open-chrome='open -a Google\ Chrome --args --ignore-certificate-errors'
 
 
@@ -107,9 +107,20 @@ export ESPORTS_HOME=$HOME/dev/Projects/esports/esports_git
 export TMS_HOME=$HOME/dev/Projects/TMS
 
 
+
+# TMS section start ---------------------------------------------------------
+
+export TMSCORE_PATH=$TMS_HOME/tms-backend/tms-core
+export TMSIS_WOTB_PATH=$TMS_HOME/tms-backend/tmsis-wotb
+export TMS_CLIENT_PATH=$TMS_HOME/tms-backend/tms-client
+export TMSIS_WOT_PUBLIC_PATH=$TMS_HOME/tms-backend/tmsis-wot-public
+
+# TMS section end ---------------------------------------------------------
+
+
 #virtualenv wrapper
-export WORKON_HOME=$HOME/dev/Projects/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+#export WORKON_HOME=$HOME/dev/Projects/.virtualenvs
+#source /usr/local/bin/virtualenvwrapper.sh
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
