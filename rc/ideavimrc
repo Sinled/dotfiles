@@ -8,13 +8,14 @@ set incsearch         " show where search pattern typed so far matches
 set smartcase         " no ignore case when pattern has uppercase
 
 set matchpairs        " pairs of characters that "%" can match
-" set relativenumber    " show the line number relative to the line with the cursor - Disabled, currently makes pycharm unresponsive in big files
+set relativenumber    " show the line number relative to the line with the cursor - Disabled, currently makes pycharm unresponsive in big files
 set scrolloff=8       " minimum nr. of lines above and below cursor
 
 set showmode          " message on status line to show current mode
 set wrapscan          " searches wrap around the end of the file
 set gdefault          " substitute flag 'g' is default on
 set surround          " enable vim-surround plugin
+set multiple-cursors  " enable vim-multiple-cursors plugin emulation
 set clipboard+=unnamed " use os x clipboard
 
 
