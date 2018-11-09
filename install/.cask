@@ -46,7 +46,7 @@ brew cask install qlmarkdown
 # install cask versions
 brew tap caskroom/versions
 
-brew cask install alfred2
+brew cask install alfred
 brew cask install dash
 brew cask install parallels-desktop
 brew cask install sublime-text
