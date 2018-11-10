@@ -54,7 +54,10 @@ brew cask install google-chrome-canary
 brew cask install caskroom/homebrew-versions/java6
 brew cask install forklift
 
-
+# quick look plugins
+brew cask install qlcolorcode    # highlight code in quick look
+brew cask install qlvideo        # preview additional video formats in quick look
+brew cask install webpquicklook  # preview webp
 
 # update bash profile
 source ~/.bash_profile
