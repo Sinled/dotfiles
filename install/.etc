@@ -4,10 +4,6 @@ echo ''
 echo 'Install extraz'
 echo ''
 
-# install vagrant plugins
-vagrant plugin install vagrant-hostsupdater
-vagrant plugin install vagrant-parallels
-
 # install python virtual env
 pip install virtualenvwrapper
 
@@ -15,14 +11,3 @@ pip install virtualenvwrapper
 zsh
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 chsh -s /bin/zsh
-
-#install oh-my-zsh
-# curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-
-# link sublime to work in terminal
-
-
-# install vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-

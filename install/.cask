@@ -5,56 +5,53 @@ echo 'Install Cask'
 echo ''
 
 # install cask
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 
 # add possibility to install specific versions
 brew tap caskroom/versions
 
 # install soft with cask
 
+brew cask install 1password
+brew cask install alfred
 brew cask install anki
+brew cask install bartender
+brew cask install chromium
 brew cask install controllermate
+brew cask install dash
+brew cask install docker
 brew cask install dropbox
+brew cask install evernote
 brew cask install firefox
+brew cask install forklift
 brew cask install google-chrome
-brew cask install google-drive
 brew cask install imageoptim
 brew cask install iterm2
-brew cask install 1password
 brew cask install opera
-brew cask install webstorm
+brew cask install pycharm
 brew cask install plex-media-server
 brew cask install plex-media-player
-# brew cask install razer-synapse
-# brew cask install skim
 brew cask install skype
-# brew cask install smcfancontrol
 brew cask install steam
 brew cask install things
-# brew cask install thunderbird
 brew cask install transmission
 brew cask install xscope
 brew cask install yandex
-brew cask install ynab
 brew cask install telegram
-brew cask install evernote
-# brew cask install spotify
 brew cask install tunnelbear
+brew cask install visual-studio-code
+brew cask install ynab
 # brew cask install mplayer-osx-extended # mplayer has malware currently inside
-brew cask install qlmarkdown
 
 # install cask versions
 brew tap caskroom/versions
 
-brew cask install alfred
-brew cask install dash
 brew cask install parallels-desktop
 brew cask install sublime-text
-brew cask install google-chrome-canary
 brew cask install caskroom/homebrew-versions/java6
-brew cask install forklift
 
 # quick look plugins
+brew cask install qlmarkdown
 brew cask install qlcolorcode    # highlight code in quick look
 brew cask install qlvideo        # preview additional video formats in quick look
 brew cask install webpquicklook  # preview webp

@@ -55,10 +55,9 @@ brew install libav
 brew install mpv
 brew install duti
 
-
-brew tap neovim/homebrew-neovim
-brew install --HEAD neovim
+brew install vim
 brew install node
+brew install yarn
 brew install watchman
 brew install python --framework
 
