@@ -4,6 +4,6 @@ echo ''
 echo 'Installing node packages'
 echo ''
 
-yarn install -g n
-yarn install -g eslint
-yarn install -g prettier
+yarn global n
+yarn global eslint
+yarn global prettier
