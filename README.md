@@ -10,6 +10,12 @@ Based on [mathiasbynens dotfiles](https://github.com/mathiasbynens/dotfiles)!
 
 You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
+Before installation you need to give terminal.app full file access
+```
+Security & privace > Full disk access >
+```
+
+
 ```bash
 git clone https://github.com/Sinled/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
