@@ -5,9 +5,12 @@ echo 'Install extraz'
 echo ''
 
 # install python virtual env
-pip install virtualenvwrapper
+pip3 install virtualenvwrapper
 
 # install prezto
 zsh
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 chsh -s /bin/zsh
+
+# install vim plugin manager
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
