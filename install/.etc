@@ -14,4 +14,3 @@ chsh -s /bin/zsh
 
 # install vim plugin manager
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-zsh
