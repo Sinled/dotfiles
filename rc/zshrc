@@ -58,8 +58,6 @@ function gcam() {
 		git commit -am "${BRANCH}. ${1}"
 }
 
-# remove zprezto alias
-unalias gcm
 # commit only files add stage with current branch prepended
 function gcm() {
 		BRANCH=$(git branch -l | grep '*' | awk '{print $2}')
