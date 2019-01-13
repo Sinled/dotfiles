@@ -12,7 +12,7 @@ brew tap caskroom/versions
 
 # install soft with cask
 
-brew cask install 1password
+brew cask install 1password6 # may not work properle if installed via brew
 brew cask install alfred
 brew cask install anki
 brew cask install bartender
