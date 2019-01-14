@@ -54,7 +54,7 @@ brew install ffmpeg
 brew install libav
 brew install mpv
 brew install duti
-
+brew install gmp # fix problem with libgmp.10
 brew install vim
 brew install node
 brew install yarn
