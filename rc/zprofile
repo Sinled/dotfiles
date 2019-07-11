@@ -9,9 +9,10 @@
 # Browser
 #
 
-if [[ "$OSTYPE" == darwin* ]]; then
-  export BROWSER='open'
-fi
+# this settings breaks create-react-app env browser settings
+# if [[ "$OSTYPE" == darwin* ]]; then
+#   export BROWSER='open'
+# fi
 
 #
 # Editors
