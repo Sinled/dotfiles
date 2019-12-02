@@ -36,6 +36,7 @@ brew cask install steam
 brew cask install things
 brew cask install transmission
 brew cask install xscope
+brew cask install paw
 brew cask install yandex
 brew cask install telegram
 brew cask install tunnelbear
