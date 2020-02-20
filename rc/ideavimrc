@@ -29,8 +29,10 @@ nnoremap g, :action JumpToNextChange<CR>
 
 
 " Navigate between cursor position list
-map <C-O> :action VimMotionJumpPrevious<CR>
-map <C-I> :action VimMotionJumpNext<CR>
+map <C-O> :action Back<CR>
+" map <C-O> :action VimMotionJumpPrevious<CR>
+map <C-I> :action Forward<CR>
+" map <C-I> :action VimMotionJumpNext<CR>
 
 " Use < > for continious shift
 vnoremap > >gv
