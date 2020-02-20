@@ -12,11 +12,11 @@ brew tap homebrew/cask-versions
 # install soft with cask
 
 brew cask install 1password # may not work properle if installed via brew
-brew cask install alfred
+brew cask install alfred3
 brew cask install anki
 brew cask install bartender
 brew cask install chromium
-brew cask install controllermate
+# brew cask install controllermate - dosent work on catalina
 brew cask install dash
 brew cask install docker
 brew cask install dropbox
