@@ -41,6 +41,7 @@ brew cask install tunnelbear
 brew cask install visual-studio-code
 brew cask install ynab
 brew cask install ksdiff
+brew cask install karabiner-elements
 brew cask install notion
 brew cask install mpv
 # brew cask install mplayer-osx-extended # mplayer has malware currently inside
