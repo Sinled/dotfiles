@@ -17,7 +17,7 @@ brew cask install anki
 brew cask install bartender
 brew cask install chromium
 # brew cask install controllermate - dosent work on catalina
-brew cask install dash
+brew cask install dash4
 brew cask install docker
 brew cask install dropbox
 brew cask install evernote
