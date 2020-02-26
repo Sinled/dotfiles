@@ -29,7 +29,7 @@ brew cask install iterm2
 brew cask install opera
 brew cask install pycharm
 brew cask install plex-media-server
-brew cask install plex-media-player
+brew cask install plex # old plex-media-player does't work on catalina
 brew cask install skype
 brew cask install steam
 # brew cask install things - # installed from app store

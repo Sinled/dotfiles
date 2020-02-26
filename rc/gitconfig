@@ -69,6 +69,10 @@
 		fi \
 	}; f"
 
+    # useful when reviewing code, see for details
+	review = merge --no-commit --no-ff
+	review-abort = reset --merge --hard
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
