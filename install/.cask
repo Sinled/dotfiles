@@ -44,6 +44,8 @@ brew cask install ksdiff
 brew cask install karabiner-elements
 brew cask install notion
 brew cask install mpv
+brew cask install iina
+brew cask install netspot
 # brew cask install mplayer-osx-extended # mplayer has malware currently inside
 
 # install cask versions
