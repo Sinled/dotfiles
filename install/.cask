@@ -9,6 +9,9 @@ brew tap homebrew/cask-cask
 # add possibility to install specific versions
 brew tap homebrew/cask-versions
 
+# Add possibility to update particular casks
+brew tap buo/cask-upgrade
+
 # install soft with cask
 
 brew cask install 1password # may not work properle if installed via brew
