@@ -23,12 +23,12 @@ set clipboard+=unnamed " use os x clipboard
 nnoremap <CR> :nohlsearch<CR><CR>
 
 
-" Nvigated between previous edit location
+" Nvigated between previous edit location, idea specific
 nnoremap g; :action JumpToLastChange<CR>
 nnoremap g, :action JumpToNextChange<CR>
 
 
-" Navigate between cursor position list
+" Navigate between cursor position list idea specific
 map <C-O> :action Back<CR>
 " map <C-O> :action VimMotionJumpPrevious<CR>
 map <C-I> :action Forward<CR>
