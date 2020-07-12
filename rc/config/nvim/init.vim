@@ -1,6 +1,7 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
+
 Plug 'junegunn/seoul256.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-surround'
@@ -28,6 +29,23 @@ nnoremap v m`v
 nnoremap V m`V
 nnoremap <C-v> m`<C-v>
 vnoremap <esc> <esc>``
+
+" Use alt + hjkl to move line or selection
+" On mac os there are some problems - see https://stackoverflow.com/questions/7501092/can-i-map-alt-key-in-vim/15399297#15399297
+" ˙ - alt + h
+" ∆ - alt + j
+" ˚ - alt + k
+" ¬ - alt + l ˙
+nnoremap ∆ :m .+1<CR>          
+nnoremap ˚ :m .-2<CR>
+inoremap ∆ <Esc>:m .+1<CR>gi
+inoremap ˚ <Esc>:m .-2<CR>gi
+vnoremap ∆ :m '>+1<CR>gv
+vnoremap ˚ :m '<-2<CR>gv
+nnoremap ˙ << 
+nnoremap ¬ >>
+xnoremap ˙ <gv
+xnoremap ¬ >gv
 
 
 " Plugins settings
