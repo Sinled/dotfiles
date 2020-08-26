@@ -14,10 +14,15 @@ set scrolloff=8       " minimum nr. of lines above and below cursor
 set showmode          " message on status line to show current mode
 set wrapscan          " searches wrap around the end of the file
 set gdefault          " substitute flag 'g' is default on
-set surround          " enable vim-surround plugin
-set multiple-cursors  " enable vim-multiple-cursors plugin emulation
 set clipboard+=unnamed " use os x clipboard
 
+" Plugin emulation
+set surround          " enable vim-surround plugin
+set multiple-cursors  " enable vim-multiple-cursors plugin emulation
+set commentary        " enable vim-commentari emulation
+
+set ideajoin          " smart join powered by IDEA
+set highlightedyank   " emulate https://github.com/machakann/vim-highlightedyank
 
 " Press return to temporarily get out of the highlighted search.
 nnoremap <CR> :nohlsearch<CR><CR>
@@ -26,6 +31,7 @@ nnoremap <CR> :nohlsearch<CR><CR>
 " Nvigated between previous edit location, idea specific
 nnoremap g; :action JumpToLastChange<CR>
 nnoremap g, :action JumpToNextChange<CR>
+nnoremap gD :action GotoTypeDeclaration<CR>
 
 
 " Navigate between cursor position list idea specific
@@ -52,16 +58,46 @@ nmap <S-M-Enter> O<Esc>j
 nmap <S-Enter> o<Esc>k
 
 " Set leader
-" let mapleader = "<Space>"
+let mapleader = " "
 
-" Show action refactor menu
-map <Space>a :action Refactorings.QuickListPopupAction<CR>
+" Custom views
 
-" Reformat code
-map <Space>f :action ReformatCode<CR>
+" Structure view
+map <leader>s :action ActivateStructureToolWindow<CR>
 
-" Go to related symbol
-map <Space>r :action GotoRelated<CR>
+" Custom popups
+
+" Open refactor popup
+map <leader>r :action Refactorings.QuickListPopupAction<CR>
 
 " Go to source\test
-map <Space>t :action GotoTest<CR>
+" map <leader>t :action GotoTest<CR> " it seems its not very usefull
+
+" Custom movement
+
+" Move element right
+map <leader>h :action MoveElementLeft<CR>
+
+" Move block down
+map <leader>j :action MoveStatementDown<CR>
+
+" Move block up
+map <leader>k :action MoveStatementUp<CR>
+
+" Move element left
+map <leader>l :action MoveElementRight<CR>
+
+" Open Project menu
+map <leader>p :action ManageRecentProjects<CR>
+
+" Open go to popup
+map <leader>g :action EditorPopupMenu.GoTo<CR>
+
+" Show type definition popup
+map <leader>t :action QuickTypeDefinition<CR>
+
+" Show quick documentation window
+map <leader>d :action QuickJavaDoc<CR>
+
+
+

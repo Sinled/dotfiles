@@ -8,6 +8,8 @@ Plug 'tpope/vim-surround'
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-entire'
+Plug 'tpope/vim-commentary'
+Plug 'machakann/vim-highlightedyanky'
 
 call plug#end()
 
@@ -36,13 +38,13 @@ vnoremap <esc> <esc>``
 " ∆ - alt + j
 " ˚ - alt + k
 " ¬ - alt + l ˙
-nnoremap ∆ :m .+1<CR>          
+nnoremap ∆ :m .+1<CR>
 nnoremap ˚ :m .-2<CR>
 inoremap ∆ <Esc>:m .+1<CR>gi
 inoremap ˚ <Esc>:m .-2<CR>gi
 vnoremap ∆ :m '>+1<CR>gv
 vnoremap ˚ :m '<-2<CR>gv
-nnoremap ˙ << 
+nnoremap ˙ <<
 nnoremap ¬ >>
 xnoremap ˙ <gv
 xnoremap ¬ >gv
